@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  MoneyBoxTask
+
+  Created by Kagan Girgin on 7/29/22.
+  
+*/
+
+"home" = "Home";
+"profile" = "Profile";
+"unknownError" = "Unknown error has occured.";
+"error" = "Error";
+"ok" = "OK";
