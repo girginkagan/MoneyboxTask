@@ -9,4 +9,5 @@ import Foundation
 
 enum APIStatusCodes: Int {
     case success = 200
+    case unAuthorized = 401
 }

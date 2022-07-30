@@ -12,14 +12,14 @@ final class ProfileViewModel: BaseViewModel {
     private let network: RestClient
     var coordinator: ProfileCoordinator?
     private let disposeBag = DisposeBag()
-    let isError = BehaviorSubject<BaseErrorModel?>(value: nil)
-    let isLoading = BehaviorSubject<Bool>(value: false)
     
     init(network: RestClient) {
         self.network = network
     }
     
-    func setBindings() {
+    func logout() {
+        DataProvider.shared.removeUser()
         
+        coordinator?.presentSplash()
     }
 }

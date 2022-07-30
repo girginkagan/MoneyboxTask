@@ -26,23 +26,23 @@ final class RealmUtil {
             }
         }*/
     }
-    func setUser(data: LoginData) {
+    func setUser(data: LoginResponseModel) {
         let realm = try! Realm()
         try! realm.write {
             realm.add(data, update: .all)
         }
     }
     
-    func getUser() -> LoginData? {
+    func getUser() -> LoginResponseModel? {
         let realm = try! Realm()
-        let res = realm.objects(LoginData.self)
+        let res = realm.objects(LoginResponseModel.self)
         return Array(res).first
     }
     
-    func removeUserData(data: LoginData) {
+    func removeUser() {
         let realm = try! Realm()
         try! realm.write {
-            realm.delete(data)
+            realm.deleteAll()
         }
     }
 }

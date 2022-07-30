@@ -56,22 +56,26 @@
 		77FAFD132894577300635BE8 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFD122894577300635BE8 /* Storyboarded.swift */; };
 		77FAFD16289457A200635BE8 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFD14289457A200635BE8 /* RestClient.swift */; };
 		77FAFD17289457A200635BE8 /* IServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFD15289457A200635BE8 /* IServiceHandler.swift */; };
-		77FAFD1D289457C900635BE8 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFD1C289457C900635BE8 /* LoginData.swift */; };
+		77FAFD1D289457C900635BE8 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFD1C289457C900635BE8 /* LoginResponseModel.swift */; };
 		77FAFD1F289457D900635BE8 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFD1E289457D900635BE8 /* BaseRequest.swift */; };
-		77FAFD212894581F00635BE8 /* JWTUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFD202894581F00635BE8 /* JWTUtil.swift */; };
 		77FAFD4D2894592000635BE8 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD4C2894592000635BE8 /* SVProgressHUD */; };
-		77FAFD502894593900635BE8 /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD4F2894593900635BE8 /* JWTDecode */; };
 		77FAFD6228945A1500635BE8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD6128945A1500635BE8 /* Alamofire */; };
 		77FAFD6A28945C2900635BE8 /* Unrealm in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD6928945C2900635BE8 /* Unrealm */; };
 		77FAFD6C28945C2900635BE8 /* UnrealmObjC in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD6B28945C2900635BE8 /* UnrealmObjC */; };
 		77FAFD6F28945D4D00635BE8 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD6E28945D4D00635BE8 /* IQKeyboardManagerSwift */; };
-		77FAFD7128945EB500635BE8 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFD7028945EB500635BE8 /* BaseResponseModel.swift */; };
 		77FAFD832894624600635BE8 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD822894624600635BE8 /* RxBlocking */; };
 		77FAFD852894624600635BE8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD842894624600635BE8 /* RxCocoa */; };
 		77FAFD872894624600635BE8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD862894624600635BE8 /* RxRelay */; };
 		77FAFD892894624600635BE8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD882894624600635BE8 /* RxSwift */; };
 		77FAFD8C289462AB00635BE8 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD8B289462AB00635BE8 /* Swinject */; };
 		77FAFD8F289462DA00635BE8 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = 77FAFD8E289462DA00635BE8 /* SwinjectAutoregistration */; };
+		77FAFD91289593DF00635BE8 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFD90289593DF00635BE8 /* UITextField+Padding.swift */; };
+		77FAFD9B28959BE900635BE8 /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFD9A28959BE900635BE8 /* LoginRequestModel.swift */; };
+		77FAFD9D28959C3D00635BE8 /* PostLoginApiLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFD9C28959C3D00635BE8 /* PostLoginApiLoginRequest.swift */; };
+		77FAFDA12895A6DE00635BE8 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFDA02895A6DE00635BE8 /* BaseResponseModel.swift */; };
+		77FAFDA32895B50400635BE8 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFDA22895B50400635BE8 /* Validation.swift */; };
+		77FAFDA52895B5EC00635BE8 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFDA42895B5EC00635BE8 /* PasswordViewModel.swift */; };
+		77FAFDA72895B74C00635BE8 /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFDA62895B74C00635BE8 /* EmailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,10 +149,15 @@
 		77FAFD122894577300635BE8 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		77FAFD14289457A200635BE8 /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		77FAFD15289457A200635BE8 /* IServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IServiceHandler.swift; sourceTree = "<group>"; };
-		77FAFD1C289457C900635BE8 /* LoginData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		77FAFD1C289457C900635BE8 /* LoginResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
 		77FAFD1E289457D900635BE8 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
-		77FAFD202894581F00635BE8 /* JWTUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTUtil.swift; sourceTree = "<group>"; };
-		77FAFD7028945EB500635BE8 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
+		77FAFD90289593DF00635BE8 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
+		77FAFD9A28959BE900635BE8 /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
+		77FAFD9C28959C3D00635BE8 /* PostLoginApiLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoginApiLoginRequest.swift; sourceTree = "<group>"; };
+		77FAFDA02895A6DE00635BE8 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
+		77FAFDA22895B50400635BE8 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		77FAFDA42895B5EC00635BE8 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
+		77FAFDA62895B74C00635BE8 /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +168,6 @@
 				77FAFD6C28945C2900635BE8 /* UnrealmObjC in Frameworks */,
 				77FAFD832894624600635BE8 /* RxBlocking in Frameworks */,
 				77FAFD852894624600635BE8 /* RxCocoa in Frameworks */,
-				77FAFD502894593900635BE8 /* JWTDecode in Frameworks */,
 				77FAFD6F28945D4D00635BE8 /* IQKeyboardManagerSwift in Frameworks */,
 				77FAFD8C289462AB00635BE8 /* Swinject in Frameworks */,
 				77FAFD892894624600635BE8 /* RxSwift in Frameworks */,
@@ -284,6 +292,8 @@
 			children = (
 				77FAFCCB2894563E00635BE8 /* LoginViewController.swift */,
 				77FAFCCA2894563E00635BE8 /* LoginViewModel.swift */,
+				77FAFDA62895B74C00635BE8 /* EmailViewModel.swift */,
+				77FAFDA42895B5EC00635BE8 /* PasswordViewModel.swift */,
 				77FAFCC82894563D00635BE8 /* LoginCoordinator.swift */,
 				77FAFCC92894563D00635BE8 /* LoginViewController.xib */,
 			);
@@ -336,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				77FAFD122894577300635BE8 /* Storyboarded.swift */,
+				77FAFDA22895B50400635BE8 /* Validation.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -369,6 +380,7 @@
 			children = (
 				77FAFD022894574C00635BE8 /* String+local.swift */,
 				77FAFD032894574C00635BE8 /* UIViewController+Extensions.swift */,
+				77FAFD90289593DF00635BE8 /* UITextField+Padding.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -380,7 +392,6 @@
 				77FAFCFA2894573B00635BE8 /* APIErrorGenerator.swift */,
 				77FAFCFB2894573C00635BE8 /* RealmUtil.swift */,
 				77FAFCF82894573B00635BE8 /* ViewControllerUtil.swift */,
-				77FAFD202894581F00635BE8 /* JWTUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -406,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				77FAFD1E289457D900635BE8 /* BaseRequest.swift */,
+				77FAFD9C28959C3D00635BE8 /* PostLoginApiLoginRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -422,6 +434,7 @@
 		77FAFD1A289457B500635BE8 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				77FAFD9A28959BE900635BE8 /* LoginRequestModel.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -429,8 +442,8 @@
 		77FAFD1B289457BA00635BE8 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				77FAFD1C289457C900635BE8 /* LoginData.swift */,
-				77FAFD7028945EB500635BE8 /* BaseResponseModel.swift */,
+				77FAFD1C289457C900635BE8 /* LoginResponseModel.swift */,
+				77FAFDA02895A6DE00635BE8 /* BaseResponseModel.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -453,7 +466,6 @@
 			name = MoneyBoxTask;
 			packageProductDependencies = (
 				77FAFD4C2894592000635BE8 /* SVProgressHUD */,
-				77FAFD4F2894593900635BE8 /* JWTDecode */,
 				77FAFD6128945A1500635BE8 /* Alamofire */,
 				77FAFD6928945C2900635BE8 /* Unrealm */,
 				77FAFD6B28945C2900635BE8 /* UnrealmObjC */,
@@ -539,7 +551,6 @@
 			mainGroup = 77FAFC3028944F4D00635BE8;
 			packageReferences = (
 				77FAFD4B2894592000635BE8 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
-				77FAFD4E2894593900635BE8 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */,
 				77FAFD6028945A1500635BE8 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				77FAFD6828945C2900635BE8 /* XCRemoteSwiftPackageReference "Unrealm" */,
 				77FAFD6D28945D4D00635BE8 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
@@ -602,16 +613,22 @@
 				77FAFD0C2894575F00635BE8 /* Color.swift in Sources */,
 				77FAFD0E2894575F00635BE8 /* AppStoryboard.swift in Sources */,
 				77FAFD16289457A200635BE8 /* RestClient.swift in Sources */,
+				77FAFDA52895B5EC00635BE8 /* PasswordViewModel.swift in Sources */,
 				77FAFD102894575F00635BE8 /* APIStatusCodes.swift in Sources */,
-				77FAFD212894581F00635BE8 /* JWTUtil.swift in Sources */,
 				77FAFCEA2894569600635BE8 /* Container+API.swift in Sources */,
 				77FAFCBF289455D900635BE8 /* BaseViewModel.swift in Sources */,
 				77FAFCEC2894569600635BE8 /* Container+RegisterDependencies.swift in Sources */,
-				77FAFD1D289457C900635BE8 /* LoginData.swift in Sources */,
+				77FAFDA32895B50400635BE8 /* Validation.swift in Sources */,
+				77FAFD91289593DF00635BE8 /* UITextField+Padding.swift in Sources */,
+				77FAFD1D289457C900635BE8 /* LoginResponseModel.swift in Sources */,
+				77FAFDA12895A6DE00635BE8 /* BaseResponseModel.swift in Sources */,
 				77FAFCFE2894573C00635BE8 /* AlertUtil.swift in Sources */,
 				77FAFCBE289455D900635BE8 /* BaseErrorModel.swift in Sources */,
+				77FAFDA72895B74C00635BE8 /* EmailViewModel.swift in Sources */,
 				77FAFCD22894564E00635BE8 /* TabBarViewModel.swift in Sources */,
+				77FAFD9B28959BE900635BE8 /* LoginRequestModel.swift in Sources */,
 				77FAFCFF2894573C00635BE8 /* APIErrorGenerator.swift in Sources */,
+				77FAFD9D28959C3D00635BE8 /* PostLoginApiLoginRequest.swift in Sources */,
 				77FAFCC5289455FB00635BE8 /* SplashViewModel.swift in Sources */,
 				77FAFD0D2894575F00635BE8 /* APIErrors.swift in Sources */,
 				77FAFD132894577300635BE8 /* Storyboarded.swift in Sources */,
@@ -619,7 +636,6 @@
 				77FAFCBD289455D900635BE8 /* BaseCoordinator.swift in Sources */,
 				77FAFD002894573C00635BE8 /* RealmUtil.swift in Sources */,
 				77FAFCE32894566400635BE8 /* ProfileViewController.swift in Sources */,
-				77FAFD7128945EB500635BE8 /* BaseResponseModel.swift in Sources */,
 				77FAFCE92894569600635BE8 /* Container+ViewModels.swift in Sources */,
 				77FAFCCC2894563E00635BE8 /* LoginCoordinator.swift in Sources */,
 				77FAFCD82894565700635BE8 /* HomeViewModel.swift in Sources */,
@@ -684,7 +700,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		77FAFC6128944F4E00635BE8 /* Debug */ = {
+		77FAFC6128944F4E00635BE8 /* Dev Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -742,9 +758,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Dev Debug";
 		};
-		77FAFC6228944F4E00635BE8 /* Release */ = {
+		77FAFC6228944F4E00635BE8 /* Dev Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -796,11 +812,12 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Dev Release";
 		};
-		77FAFC6428944F4E00635BE8 /* Debug */ = {
+		77FAFC6428944F4E00635BE8 /* Dev Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APP_NAME = "Moneybox Debug";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -820,15 +837,17 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.futureworks.MoneyBoxTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Dev Debug";
 		};
-		77FAFC6528944F4E00635BE8 /* Release */ = {
+		77FAFC6528944F4E00635BE8 /* Dev Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APP_NAME = "Moneybox UAT";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -848,13 +867,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.futureworks.MoneyBoxTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = "Dev Release";
 		};
-		77FAFC6728944F4E00635BE8 /* Debug */ = {
+		77FAFC6728944F4E00635BE8 /* Dev Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -872,9 +892,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyBoxTask.app/MoneyBoxTask";
 			};
-			name = Debug;
+			name = "Dev Debug";
 		};
-		77FAFC6828944F4E00635BE8 /* Release */ = {
+		77FAFC6828944F4E00635BE8 /* Dev Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -892,9 +912,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyBoxTask.app/MoneyBoxTask";
 			};
-			name = Release;
+			name = "Dev Release";
 		};
-		77FAFC6A28944F4E00635BE8 /* Debug */ = {
+		77FAFC6A28944F4E00635BE8 /* Dev Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -910,9 +930,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MoneyBoxTask;
 			};
-			name = Debug;
+			name = "Dev Debug";
 		};
-		77FAFC6B28944F4E00635BE8 /* Release */ = {
+		77FAFC6B28944F4E00635BE8 /* Dev Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -928,7 +948,257 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MoneyBoxTask;
 			};
-			name = Release;
+			name = "Dev Release";
+		};
+		77FAFD922895964700635BE8 /* Prod Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Prod Debug";
+		};
+		77FAFD932895964700635BE8 /* Prod Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_NAME = "Moneybox Prod Debug";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8723ZJPVQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoneyBoxTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureworks.MoneyBoxTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Prod Debug";
+		};
+		77FAFD942895964700635BE8 /* Prod Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8723ZJPVQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureworks.MoneyBoxTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyBoxTask.app/MoneyBoxTask";
+			};
+			name = "Prod Debug";
+		};
+		77FAFD952895964700635BE8 /* Prod Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8723ZJPVQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureworks.MoneyBoxTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyBoxTask;
+			};
+			name = "Prod Debug";
+		};
+		77FAFD962895965300635BE8 /* Prod Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Prod Release";
+		};
+		77FAFD972895965300635BE8 /* Prod Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_NAME = Moneybox;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8723ZJPVQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoneyBoxTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureworks.MoneyBoxTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Prod Release";
+		};
+		77FAFD982895965300635BE8 /* Prod Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8723ZJPVQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureworks.MoneyBoxTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyBoxTask.app/MoneyBoxTask";
+			};
+			name = "Prod Release";
+		};
+		77FAFD992895965300635BE8 /* Prod Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8723ZJPVQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureworks.MoneyBoxTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyBoxTask;
+			};
+			name = "Prod Release";
 		};
 /* End XCBuildConfiguration section */
 
@@ -936,38 +1206,46 @@
 		77FAFC3428944F4D00635BE8 /* Build configuration list for PBXProject "MoneyBoxTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77FAFC6128944F4E00635BE8 /* Debug */,
-				77FAFC6228944F4E00635BE8 /* Release */,
+				77FAFC6128944F4E00635BE8 /* Dev Debug */,
+				77FAFD922895964700635BE8 /* Prod Debug */,
+				77FAFC6228944F4E00635BE8 /* Dev Release */,
+				77FAFD962895965300635BE8 /* Prod Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Prod Release";
 		};
 		77FAFC6328944F4E00635BE8 /* Build configuration list for PBXNativeTarget "MoneyBoxTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77FAFC6428944F4E00635BE8 /* Debug */,
-				77FAFC6528944F4E00635BE8 /* Release */,
+				77FAFC6428944F4E00635BE8 /* Dev Debug */,
+				77FAFD932895964700635BE8 /* Prod Debug */,
+				77FAFC6528944F4E00635BE8 /* Dev Release */,
+				77FAFD972895965300635BE8 /* Prod Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Prod Release";
 		};
 		77FAFC6628944F4E00635BE8 /* Build configuration list for PBXNativeTarget "MoneyBoxTaskTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77FAFC6728944F4E00635BE8 /* Debug */,
-				77FAFC6828944F4E00635BE8 /* Release */,
+				77FAFC6728944F4E00635BE8 /* Dev Debug */,
+				77FAFD942895964700635BE8 /* Prod Debug */,
+				77FAFC6828944F4E00635BE8 /* Dev Release */,
+				77FAFD982895965300635BE8 /* Prod Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Prod Release";
 		};
 		77FAFC6928944F4E00635BE8 /* Build configuration list for PBXNativeTarget "MoneyBoxTaskUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77FAFC6A28944F4E00635BE8 /* Debug */,
-				77FAFC6B28944F4E00635BE8 /* Release */,
+				77FAFC6A28944F4E00635BE8 /* Dev Debug */,
+				77FAFD952895964700635BE8 /* Prod Debug */,
+				77FAFC6B28944F4E00635BE8 /* Dev Release */,
+				77FAFD992895965300635BE8 /* Prod Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Prod Release";
 		};
 /* End XCConfigurationList section */
 
@@ -978,14 +1256,6 @@
 			requirement = {
 				kind = upToNextMinorVersion;
 				minimumVersion = 1.0.0;
-			};
-		};
-		77FAFD4E2894593900635BE8 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/auth0/JWTDecode.swift.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 3.0.0;
 			};
 		};
 		77FAFD6028945A1500635BE8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -1043,11 +1313,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 77FAFD4B2894592000635BE8 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
 			productName = SVProgressHUD;
-		};
-		77FAFD4F2894593900635BE8 /* JWTDecode */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 77FAFD4E2894593900635BE8 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */;
-			productName = JWTDecode;
 		};
 		77FAFD6128945A1500635BE8 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

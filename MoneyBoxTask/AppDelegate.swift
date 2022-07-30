@@ -26,7 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configureIQKeyboardManager()
         configureSVProgressHUD()
         
-        Realm.registerRealmables(LoginData.self)
+        Realm.registerRealmables(LoginResponseModel.self)
+        Realm.registerRealmables(UserData.self)
+        Realm.registerRealmables(ActionMessage.self)
+        Realm.registerRealmables(Action.self)
+        Realm.registerRealmables(Session.self)
         
         AppDelegate.container.registerDependencies()
         

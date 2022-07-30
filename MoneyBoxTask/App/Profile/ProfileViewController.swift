@@ -13,6 +13,9 @@ final class ProfileViewController: UIViewController, Storyboarded {
     var viewModel: ProfileViewModel?
     private let disposeBag = DisposeBag()
     
+    @IBOutlet weak private var btnLogout: UIButton!
+    @IBOutlet weak private var lblTitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,22 +23,11 @@ final class ProfileViewController: UIViewController, Storyboarded {
     }
     
     private func setUI() {
+        lblTitle.text = .local(.profile)
+        btnLogout.setTitle(.local(.logout), for: .normal)
         
-    }
-    
-    private func setBindings() {
-        guard let viewModel = viewModel else { return }
-        
-        viewModel.isError.bind { [weak self] data in
-            if let errorData = data {
-                guard let self = self else { return }
-                AlertUtil.showStandardAlert(parentController: self, title: .local(.error), message: APIErrorGenerator().generateError(error: errorData))
-            }
+        btnLogout.rx.tap.subscribe { [weak self] _ in
+            self?.viewModel?.logout()
         }.disposed(by: disposeBag)
-        
-        viewModel.isLoading.subscribe({ [weak self] event in
-            event.element ?? false ? self?.showLoadingIndicator() : self?.hideLoadingIndicator()
-        }).disposed(by: disposeBag)
-
     }
 }

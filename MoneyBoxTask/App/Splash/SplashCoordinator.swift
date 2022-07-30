@@ -32,7 +32,7 @@ final class SplashCoordinator: BaseCoordinator {
     }
     
     private func presentMain() {
-        if DataProvider.shared.users.value != nil {
+        if DataProvider.shared.user.value != nil {
             (parentCoordinator as? AppCoordinator)?.presentHome()
         } else {
             (parentCoordinator as? AppCoordinator)?.presentLogin()
