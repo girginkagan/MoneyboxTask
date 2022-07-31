@@ -8,10 +8,10 @@
 import Foundation
 
 final class TabBarViewModel: BaseViewModel {
-    private let services: RestClient
+    private let network: RestClient
     var coordinator: TabBarCoordinator?
     
-    init(services: RestClient) {
-        self.services = services
+    init(network: RestClient) {
+        self.network = network
     }
 }

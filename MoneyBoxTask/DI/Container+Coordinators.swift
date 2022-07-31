@@ -16,5 +16,6 @@ extension Container {
         autoregister(LoginCoordinator.self, initializer: LoginCoordinator.init)
         autoregister(TabBarCoordinator.self, initializer: TabBarCoordinator.init)
         autoregister(ProfileCoordinator.self, initializer: ProfileCoordinator.init)
+        autoregister(ProductCoordinator.self, initializer: ProductCoordinator.init)
     }
 }

@@ -10,4 +10,8 @@ import UIKit
 class BaseViewModel: NSObject {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let realmUtil = RealmUtil()
+    
+    func removeUser() {
+        DataProvider.shared.removeUser()
+    }
 }

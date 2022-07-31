@@ -12,4 +12,5 @@ enum AppStoryboard: String {
     case home = "HomeViewController"
     case login = "LoginViewController"
     case profile = "ProfileViewController"
+    case product = "ProductViewController"
 }

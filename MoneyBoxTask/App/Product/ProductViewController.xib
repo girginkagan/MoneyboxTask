@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductViewController" customModule="MoneyBoxTask" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAddMoney" destination="ghO-I1-4JZ" id="MAg-b0-9p6"/>
+                <outlet property="lblMoneybox" destination="VuQ-aN-ZQb" id="uLG-a1-fO2"/>
+                <outlet property="lblPlanValue" destination="abU-E0-OGD" id="Auo-Gq-1Bw"/>
+                <outlet property="lblTitle" destination="NAw-Vj-W4W" id="g2r-gc-DFg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAw-Vj-W4W">
+                    <rect key="frame" x="20" y="79" width="374" height="0.0"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                    <color key="textColor" name="AccentColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abU-E0-OGD">
+                    <rect key="frame" x="20" y="99" width="374" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" name="AccentColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuQ-aN-ZQb">
+                    <rect key="frame" x="20" y="104" width="374" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" name="AccentColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghO-I1-4JZ">
+                    <rect key="frame" x="20" y="154" width="374" height="50"/>
+                    <color key="backgroundColor" name="color_primary"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="nV4-d7-ZB2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Add £10">
+                        <color key="titleColor" name="color_white"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="color_bg"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NAw-Vj-W4W" secondAttribute="trailing" constant="20" id="54R-Ns-5XW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VuQ-aN-ZQb" secondAttribute="trailing" constant="20" id="6Ib-MD-OUQ"/>
+                <constraint firstItem="VuQ-aN-ZQb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7ve-Lo-3Ox"/>
+                <constraint firstItem="ghO-I1-4JZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="K3F-0L-7Ka"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="abU-E0-OGD" secondAttribute="trailing" constant="20" id="Ngk-11-E1f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ghO-I1-4JZ" secondAttribute="trailing" constant="20" id="Ogq-q1-OgP"/>
+                <constraint firstItem="ghO-I1-4JZ" firstAttribute="top" secondItem="VuQ-aN-ZQb" secondAttribute="bottom" constant="50" id="Q0h-75-cgD"/>
+                <constraint firstItem="abU-E0-OGD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="SdG-bL-CqF"/>
+                <constraint firstItem="NAw-Vj-W4W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Y25-Q8-Yco"/>
+                <constraint firstItem="abU-E0-OGD" firstAttribute="top" secondItem="NAw-Vj-W4W" secondAttribute="bottom" constant="20" id="YV8-FQ-Xps"/>
+                <constraint firstItem="NAw-Vj-W4W" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="hL4-Wp-UCS"/>
+                <constraint firstItem="VuQ-aN-ZQb" firstAttribute="top" secondItem="abU-E0-OGD" secondAttribute="bottom" constant="5" id="qZR-at-qK3"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_bg">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_primary">
+            <color red="0.0" green="0.76078431372549016" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

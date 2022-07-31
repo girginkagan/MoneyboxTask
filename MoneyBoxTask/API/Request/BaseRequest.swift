@@ -26,6 +26,16 @@ extension BaseRequest {
         return Environment.dev
 #endif
     }
+    
+    public func baseAPIHeaders() -> [String: String] {
+        var dict: [String: String] = [:]
+        dict["AppId"] = "8cb2237d0679ca88db6464"
+        dict["Content-Type"] = "application/json"
+        dict["appVersion"] = "8.10.0"
+        dict["apiVersion"] = "3.0.0"
+        
+        return dict
+    }
 
     public func request() -> URLRequest {
         let url: URL! = URL(string: baseUrl + requestPath)
@@ -53,9 +63,9 @@ extension BaseRequest {
         default:
             request.httpMethod = "GET"
         }
-        /*if (DataProvider.shared.getSelectedUser()?.token ?? "").isEmpty == false {
-            request.setValue("Bearer \(DataProvider.shared.getSelectedUser()?.token ?? "")", forHTTPHeaderField: "Authorization")
-        }*/
+        if (DataProvider.shared.user.value?.session?.bearerToken ?? "").isEmpty == false {
+            request.setValue("Bearer \(DataProvider.shared.user.value?.session?.bearerToken ?? "")", forHTTPHeaderField: "Authorization")
+        }
         
         return request
     }
@@ -63,9 +73,9 @@ extension BaseRequest {
     var baseUrl: String {
         switch enviroment {
         case .prod:
-            return ""
+            return "https://api-test02.moneyboxapp.com/"
         case .dev:
-            return ""
+            return "https://api-test02.moneyboxapp.com/"
         }
     }
 }

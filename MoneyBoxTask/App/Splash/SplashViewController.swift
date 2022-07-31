@@ -27,7 +27,6 @@ final class SplashViewController: UIViewController, Storyboarded {
     private func setBindings() {
         guard let viewModel = viewModel else { return }
         
-        viewModel.setBindings()
         viewModel.getData()
         
         viewModel.isError

@@ -11,3 +11,15 @@
 "unknownError" = "Unknown error has occured.";
 "error" = "Error";
 "ok" = "OK";
+"email" = "Email";
+"password" = "Password";
+"login" = "LOG IN";
+"errorPassword" = "Your password must be at least 10 characters and include one number, one upper case character and one lower case character.";
+"errorMail" = "Please enter a valid email.";
+"logout" = "LOG OUT";
+"products" = "Products";
+"welcome" = "Welcome,";
+"totalPlanValue" = "Total Plan Value: ";
+"planValue" = "Plan Value: ";
+"moneybox" = "Moneybox: ";
+"addMoney" = "Add £10";

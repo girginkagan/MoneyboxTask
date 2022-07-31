@@ -22,14 +22,7 @@ final class SplashViewModel: BaseViewModel {
     }
     
     func getData() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            DataProvider.shared.users.accept(LoginData())
-        }
-    }
-    
-    func setBindings() {
-        DataProvider.shared.users.asObservable()
-            .map { $0 != nil }.bind(to: isReady)
-            .disposed(by: disposeBag)
+        DataProvider.shared.user.accept(realmUtil.getUser())
+        isReady.onNext(true)
     }
 }

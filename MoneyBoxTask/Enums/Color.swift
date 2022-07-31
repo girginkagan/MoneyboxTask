@@ -13,6 +13,7 @@ enum Color: String {
     case AccentColor
     case color_accent
     case color_tabbar_bg
+    case color_bg
 
     var color: UIColor? {
         switch self {
@@ -21,6 +22,7 @@ enum Color: String {
             case .AccentColor: return UIColor(named: self.rawValue)
             case .color_accent: return UIColor(named: self.rawValue)
             case .color_tabbar_bg: return UIColor(named: self.rawValue)
+            case .color_bg: return UIColor(named: self.rawValue)
         }
     }
 }

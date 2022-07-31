@@ -25,4 +25,8 @@ final class ProfileCoordinator: BaseCoordinator {
         
         navigationController.viewControllers = [viewController]
     }
+    
+    func presentSplash() {
+        (UIApplication.shared.delegate as? AppDelegate)?.appCoordinator.presentSplash()
+    }
 }
