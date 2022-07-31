@@ -24,4 +24,5 @@ enum LocalizationKeys: String {
     case totalPlanValue
     case planValue
     case moneybox
+    case addMoney
 }

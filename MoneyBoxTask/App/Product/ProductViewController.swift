@@ -13,6 +13,10 @@ final class ProductViewController: UIViewController, Storyboarded {
     var viewModel: ProductViewModel?
     private let disposeBag = DisposeBag()
     
+    @IBOutlet weak private var btnAddMoney: UIButton!
+    @IBOutlet weak private var lblMoneybox: UILabel!
+    @IBOutlet weak private var lblPlanValue: UILabel!
+    @IBOutlet weak private var lblTitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +26,15 @@ final class ProductViewController: UIViewController, Storyboarded {
     }
     
     private func setUI() {
+        lblTitle.text = viewModel?.selectedProduct?.product?.friendlyName
+        lblPlanValue.text = .local(.planValue) + "£\(String(viewModel?.selectedProduct?.planValue ?? 0.0))"
+        lblMoneybox.text = .local(.moneybox) + "£\(String(viewModel?.selectedProduct?.moneybox ?? 0.0))"
         
+        btnAddMoney.setTitle(.local(.addMoney), for: .normal)
+        
+        btnAddMoney.rx.tap.subscribe { [weak self] _ in
+            self?.viewModel?.setOneOffPayment()
+        }.disposed(by: disposeBag)
     }
     
     private func setBindings() {
@@ -45,7 +57,11 @@ final class ProductViewController: UIViewController, Storyboarded {
         viewModel.isLoading.subscribe({ [weak self] event in
             event.element ?? false ? self?.showLoadingIndicator() : self?.hideLoadingIndicator()
         }).disposed(by: disposeBag)
-
-        viewModel.setBindings()
+        
+        viewModel.isOneOffPaymentDone.subscribe({ [weak self] event in
+            if event.element ?? false {
+                self?.viewModel?.coordinator?.goBack()
+            }
+        }).disposed(by: disposeBag)
     }
 }

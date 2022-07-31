@@ -36,4 +36,9 @@ public class RestClient: IServiceHandler {
         let request = GetProductsApiRequest()
         sendRequest(request, ProductsResponseModel.self, successCompletion: successCompletion, errorCompletion: errorCompletion)
     }
+    
+    func postOneOffPayments(amount: Int, investorProductId: Int, successCompletion: @escaping (OneOffPaymentsResponseModel) -> Void, errorCompletion: @escaping (BaseErrorModel) -> Void) {
+        let request = PostOneOffPaymentsApiRequest(amount: amount, inverstorProductId: investorProductId)
+        sendRequest(request, OneOffPaymentsResponseModel.self, successCompletion: successCompletion, errorCompletion: errorCompletion)
+    }
 }

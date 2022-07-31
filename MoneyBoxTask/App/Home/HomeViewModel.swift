@@ -45,6 +45,12 @@ final class HomeViewModel: BaseViewModel {
             }
         )
         tableViewDelegate.accept(self)
+        
+        DataProvider.shared.reloadProducts.subscribe { [weak self] event in
+            if event.element ?? false {
+                self?.getData()
+            }
+        }.disposed(by: disposeBag)
     }
     
     func getData() {
@@ -54,9 +60,11 @@ final class HomeViewModel: BaseViewModel {
             self?.products = success
             self?.items.accept([SectionModel(model: .local(.profile), items: [nil]),
                                 SectionModel(model: .local(.profile), items: self?.products?.productResponses ?? [])])
+            DataProvider.shared.reloadProducts.accept(false)
         } errorCompletion: { [weak self] error in
             self?.isLoading.onNext(false)
             self?.isError.onNext(error)
+            DataProvider.shared.reloadProducts.accept(false)
         }
     }
 }

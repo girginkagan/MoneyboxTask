@@ -21,6 +21,9 @@
 		776BF6F428965C3800C3E4DC /* ProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776BF6F228965C3800C3E4DC /* ProductViewController.xib */; };
 		776BF6F628965C4500C3E4DC /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6F528965C4500C3E4DC /* ProductViewModel.swift */; };
 		776BF6F828965C5000C3E4DC /* ProductCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6F728965C5000C3E4DC /* ProductCoordinator.swift */; };
+		776BF6FA2896773F00C3E4DC /* PostOneOffPaymentsApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6F92896773F00C3E4DC /* PostOneOffPaymentsApiRequest.swift */; };
+		776BF6FC2896779500C3E4DC /* OneOffPaymentsRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6FB2896779500C3E4DC /* OneOffPaymentsRequestModel.swift */; };
+		776BF6FE289678E700C3E4DC /* OneOffPaymentsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6FD289678E700C3E4DC /* OneOffPaymentsResponseModel.swift */; };
 		77FAFC3D28944F4D00635BE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFC3C28944F4D00635BE8 /* AppDelegate.swift */; };
 		77FAFC4628944F4E00635BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FAFC4528944F4E00635BE8 /* Assets.xcassets */; };
 		77FAFC4928944F4E00635BE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77FAFC4728944F4E00635BE8 /* LaunchScreen.storyboard */; };
@@ -122,6 +125,9 @@
 		776BF6F228965C3800C3E4DC /* ProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductViewController.xib; sourceTree = "<group>"; };
 		776BF6F528965C4500C3E4DC /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		776BF6F728965C5000C3E4DC /* ProductCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCoordinator.swift; sourceTree = "<group>"; };
+		776BF6F92896773F00C3E4DC /* PostOneOffPaymentsApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostOneOffPaymentsApiRequest.swift; sourceTree = "<group>"; };
+		776BF6FB2896779500C3E4DC /* OneOffPaymentsRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneOffPaymentsRequestModel.swift; sourceTree = "<group>"; };
+		776BF6FD289678E700C3E4DC /* OneOffPaymentsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneOffPaymentsResponseModel.swift; sourceTree = "<group>"; };
 		77FAFC3928944F4D00635BE8 /* MoneyBoxTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyBoxTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FAFC3C28944F4D00635BE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77FAFC4528944F4E00635BE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -481,6 +487,7 @@
 				77FAFD1E289457D900635BE8 /* BaseRequest.swift */,
 				77FAFD9C28959C3D00635BE8 /* PostLoginApiLoginRequest.swift */,
 				776BF6EA28964D0200C3E4DC /* GetProductsApiRequest.swift */,
+				776BF6F92896773F00C3E4DC /* PostOneOffPaymentsApiRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -498,6 +505,7 @@
 			isa = PBXGroup;
 			children = (
 				77FAFD9A28959BE900635BE8 /* LoginRequestModel.swift */,
+				776BF6FB2896779500C3E4DC /* OneOffPaymentsRequestModel.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -508,6 +516,7 @@
 				77FAFD1C289457C900635BE8 /* LoginResponseModel.swift */,
 				77FAFDA02895A6DE00635BE8 /* BaseResponseModel.swift */,
 				776BF6DF289641D300C3E4DC /* ProductsResponseModel.swift */,
+				776BF6FD289678E700C3E4DC /* OneOffPaymentsResponseModel.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -725,11 +734,14 @@
 				77FAFCE12894566400635BE8 /* ProfileViewModel.swift in Sources */,
 				77FAFCF72894572800635BE8 /* DataProvider.swift in Sources */,
 				77FAFCCE2894563E00635BE8 /* LoginViewModel.swift in Sources */,
+				776BF6FE289678E700C3E4DC /* OneOffPaymentsResponseModel.swift in Sources */,
 				776BF6EE2896572800C3E4DC /* ProductTableViewCell.swift in Sources */,
 				77FAFCEB2894569600635BE8 /* Container+Coordinators.swift in Sources */,
+				776BF6FA2896773F00C3E4DC /* PostOneOffPaymentsApiRequest.swift in Sources */,
 				77FAFC3D28944F4D00635BE8 /* AppDelegate.swift in Sources */,
 				77FAFD1F289457D900635BE8 /* BaseRequest.swift in Sources */,
 				77FAFCE22894566400635BE8 /* ProfileCoordinator.swift in Sources */,
+				776BF6FC2896779500C3E4DC /* OneOffPaymentsRequestModel.swift in Sources */,
 				77FAFCFD2894573C00635BE8 /* ViewControllerUtil.swift in Sources */,
 				77FAFCCF2894563E00635BE8 /* LoginViewController.swift in Sources */,
 			);

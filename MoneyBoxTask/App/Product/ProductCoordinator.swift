@@ -29,4 +29,8 @@ final class ProductCoordinator: BaseCoordinator {
     func presentSplash() {
         (UIApplication.shared.delegate as? AppDelegate)?.appCoordinator.presentSplash()
     }
+    
+    func goBack() {
+        navigationController.popViewController(animated: true)
+    }
 }

@@ -9,7 +9,8 @@ import RxSwift
 import RxCocoa
 
 final class DataProvider {
-    var user = BehaviorRelay<LoginResponseModel?>(value: nil)
+    let user = BehaviorRelay<LoginResponseModel?>(value: nil)
+    let reloadProducts = BehaviorRelay<Bool>(value: false)
     private let disposeBag = DisposeBag()
     
     static let shared = DataProvider()
