@@ -8,14 +8,18 @@
 import Foundation
 
 // MARK: - ProductsResponseModel
-struct ProductsResponseModel: Codable {
-    let moneyboxEndOfTaxYear: String?
-    let totalPlanValue, totalEarnings: Double?
-    let totalContributionsNet: Int?
-    let totalEarningsAsPercentage: Double?
-    let productResponses: [ProductResponse]?
-    let accounts: [Account]?
-    let message: String?
+struct ProductsResponseModel: Codable, Equatable {
+    static func == (lhs: ProductsResponseModel, rhs: ProductsResponseModel) -> Bool {
+        lhs.totalPlanValue == rhs.totalPlanValue
+    }
+    
+    var moneyboxEndOfTaxYear: String?
+    var totalPlanValue, totalEarnings: Double?
+    var totalContributionsNet: Double?
+    var totalEarningsAsPercentage: Double?
+    var productResponses: [ProductResponse]?
+    var accounts: [Account]?
+    var message: String?
 
     enum CodingKeys: String, CodingKey {
         case moneyboxEndOfTaxYear = "MoneyboxEndOfTaxYear"
@@ -31,10 +35,10 @@ struct ProductsResponseModel: Codable {
 
 // MARK: - Account
 struct Account: Codable {
-    let type, name, deepLinkIdentifier: String?
-    let wrapper: Wrapper?
-    let milestone: Milestone?
-    let hasCollections: Bool?
+    var type, name, deepLinkIdentifier: String?
+    var wrapper: Wrapper?
+    var milestone: Milestone?
+    var hasCollections: Bool?
 
     enum CodingKeys: String, CodingKey {
         case type = "Type"
@@ -48,8 +52,8 @@ struct Account: Codable {
 
 // MARK: - Milestone
 struct Milestone: Codable {
-    let initialStage, endStage: String?
-    let endStageID: Int?
+    var initialStage, endStage: String?
+    var endStageID: Int?
 
     enum CodingKeys: String, CodingKey {
         case initialStage = "InitialStage"
@@ -60,11 +64,11 @@ struct Milestone: Codable {
 
 // MARK: - Wrapper
 struct Wrapper: Codable {
-    let id, definitionGlobalID: String?
-    let totalValue: Double?
-    let totalContributions: Int?
-    let earningsNet, earningsAsPercentage, maximumWithdrawal: Double?
-    let returns: Returns?
+    var id, definitionGlobalID: String?
+    var totalValue: Double?
+    var totalContributions: Double?
+    var earningsNet, earningsAsPercentage, maximumWithdrawal: Double?
+    var returns: Returns?
 
     enum CodingKeys: String, CodingKey {
         case id = "Id"
@@ -80,7 +84,7 @@ struct Wrapper: Codable {
 
 // MARK: - Returns
 struct Returns: Codable {
-    let simple, lifetime: Double?
+    var simple, lifetime: Double?
 
     enum CodingKeys: String, CodingKey {
         case simple = "Simple"
@@ -90,23 +94,23 @@ struct Returns: Codable {
 
 // MARK: - ProductResponse
 struct ProductResponse: Codable {
-    let id: Int?
-    let assetBoxGlobalID: String?
-    let planValue, moneybox: Double?
-    let totalCollection, fixedAllocationsTotal, subscriptionAmount: Int?
-    let totalWeeklySubscriptionAmount, totalFees: Int?
-    let isSelected, isFavourite: Bool?
-    let collectionDayMessage, wrapperID: String?
-    let isCashBox: Bool?
-    let pendingInstantBankTransferAmount: Int?
-    let assetBox: AssetBox?
-    let product: Product?
-    let investorAccount: InvestorAccount?
-    let personalisation: Personalisation?
-    let contributions: Contributions?
-    let moneyboxCircle: MoneyboxCircle?
-    let isSwitchVisible: Bool?
-    let state, dateCreated: String?
+    var id: Int?
+    var assetBoxGlobalID: String?
+    var planValue, moneybox, totalFees: Double?
+    var totalCollection, fixedAllocationsTotal, subscriptionAmount: Double?
+    var totalWeeklySubscriptionAmount: Double?
+    var isSelected, isFavourite: Bool?
+    var collectionDayMessage, wrapperID: String?
+    var isCashBox: Bool?
+    var pendingInstantBankTransferAmount: Double?
+    var assetBox: AssetBox?
+    var product: Product?
+    var investorAccount: InvestorAccount?
+    var personalisation: Personalisation?
+    var contributions: Contributions?
+    var moneyboxCircle: MoneyboxCircle?
+    var isSwitchVisible: Bool?
+    var state, dateCreated: String?
 
     enum CodingKeys: String, CodingKey {
         case id = "Id"
@@ -138,7 +142,7 @@ struct ProductResponse: Codable {
 
 // MARK: - AssetBox
 struct AssetBox: Codable {
-    let title: String?
+    var title: String?
 
     enum CodingKeys: String, CodingKey {
         case title = "Title"
@@ -147,7 +151,7 @@ struct AssetBox: Codable {
 
 // MARK: - Contributions
 struct Contributions: Codable {
-    let status: String?
+    var status: String?
 
     enum CodingKeys: String, CodingKey {
         case status = "Status"
@@ -156,9 +160,9 @@ struct Contributions: Codable {
 
 // MARK: - InvestorAccount
 struct InvestorAccount: Codable {
-    let contributionsNet: Int?
-    let earningsNet, earningsAsPercentage: Double?
-    let todaysInterest: Int?
+    var contributionsNet: Double?
+    var earningsNet, earningsAsPercentage: Double?
+    var todaysInterest: Double?
 
     enum CodingKeys: String, CodingKey {
         case contributionsNet = "ContributionsNet"
@@ -170,7 +174,7 @@ struct InvestorAccount: Codable {
 
 // MARK: - MoneyboxCircle
 struct MoneyboxCircle: Codable {
-    let state: String?
+    var state: String?
 
     enum CodingKeys: String, CodingKey {
         case state = "State"
@@ -179,8 +183,8 @@ struct MoneyboxCircle: Codable {
 
 // MARK: - Personalisation
 struct Personalisation: Codable {
-    let quickAddDeposit: QuickAddDeposit?
-    let hideAccounts: HideAccounts?
+    var quickAddDeposit: QuickAddDeposit?
+    var hideAccounts: HideAccounts?
 
     enum CodingKeys: String, CodingKey {
         case quickAddDeposit = "QuickAddDeposit"
@@ -190,8 +194,8 @@ struct Personalisation: Codable {
 
 // MARK: - HideAccounts
 struct HideAccounts: Codable {
-    let enabled, isHidden: Bool?
-    let sequence: Int?
+    var enabled, isHidden: Bool?
+    var sequence: Int?
 
     enum CodingKeys: String, CodingKey {
         case enabled = "Enabled"
@@ -202,7 +206,7 @@ struct HideAccounts: Codable {
 
 // MARK: - QuickAddDeposit
 struct QuickAddDeposit: Codable {
-    let amount: Int?
+    var amount: Int?
 
     enum CodingKeys: String, CodingKey {
         case amount = "Amount"
@@ -211,20 +215,20 @@ struct QuickAddDeposit: Codable {
 
 // MARK: - Product
 struct Product: Codable {
-    let id: Int?
-    let globalID, name, categoryType, type: String?
-    let friendlyName: String?
-    let canWithdraw, canProportionatelySelldown: Bool?
-    let productHexCode: String?
-    let annualLimit, depositLimit: Int?
-    let bonusMultiplier: Double?
-    let minimumWeeklyDeposit, maximumWeeklyDeposit: Int?
-    let documents: Documents?
-    let state, wrapperDefinitionGlobalID: String?
-    let lisa: Lisa?
-    let interestRate: String?
-    let interestRateAmount: Double?
-    let fund: Fund?
+    var id: Int?
+    var globalID, name, categoryType, type: String?
+    var friendlyName: String?
+    var canWithdraw, canProportionatelySelldown: Bool?
+    var productHexCode: String?
+    var annualLimit, depositLimit: Double?
+    var bonusMultiplier: Double?
+    var minimumWeeklyDeposit, maximumWeeklyDeposit: Int?
+    var documents: Documents?
+    var state, wrapperDefinitionGlobalID: String?
+    var lisa: Lisa?
+    var interestRate: String?
+    var interestRateAmount: Double?
+    var fund: Fund?
 
     enum CodingKeys: String, CodingKey {
         case id = "Id"
@@ -253,7 +257,7 @@ struct Product: Codable {
 
 // MARK: - Documents
 struct Documents: Codable {
-    let keyFeaturesURL: String?
+    var keyFeaturesURL: String?
 
     enum CodingKeys: String, CodingKey {
         case keyFeaturesURL = "KeyFeaturesUrl"
@@ -262,9 +266,9 @@ struct Documents: Codable {
 
 // MARK: - Fund
 struct Fund: Codable {
-    let fundID: Int?
-    let name: String?
-    let isFundDMB: Bool?
+    var fundID: Int?
+    var name: String?
+    var isFundDMB: Bool?
 
     enum CodingKeys: String, CodingKey {
         case fundID = "FundId"
@@ -275,7 +279,7 @@ struct Fund: Codable {
 
 // MARK: - Lisa
 struct Lisa: Codable {
-    let maximumBonus: Int?
+    var maximumBonus: Int?
 
     enum CodingKeys: String, CodingKey {
         case maximumBonus = "MaximumBonus"

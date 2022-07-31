@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - OneOffPaymentsResponseModel
-struct OneOffPaymentsResponseModel: Codable {
+struct OneOffPaymentsResponseModel: Codable, Equatable {
     let moneybox: Int?
 
     enum CodingKeys: String, CodingKey {

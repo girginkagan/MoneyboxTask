@@ -9,7 +9,11 @@ import Foundation
 import Unrealm
 
 // MARK: - LoginResponseModel
-struct LoginResponseModel: Codable, Realmable {
+struct LoginResponseModel: Codable, Realmable, Equatable {
+    static func == (lhs: LoginResponseModel, rhs: LoginResponseModel) -> Bool {
+        lhs.userData?.userID == rhs.userData?.userID
+    }
+    
     var id: String? = String(Date().timeIntervalSinceNow)
     var userData: UserData?
     var session: Session?

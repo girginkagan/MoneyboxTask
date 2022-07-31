@@ -37,6 +37,7 @@ final class HomeViewModel: BaseViewModel {
                     return cell
                 default:
                     let cell = tableView.dequeueReusableCell(withIdentifier: ProductTableViewCell.identifier) as! ProductTableViewCell
+                    cell.accessibilityIdentifier = ProductTableViewCell.identifier
                     cell.selectionStyle = .none
                     cell.updateCell(data: element)
                     

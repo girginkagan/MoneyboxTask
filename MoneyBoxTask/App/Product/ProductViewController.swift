@@ -31,6 +31,7 @@ final class ProductViewController: UIViewController, Storyboarded {
         lblMoneybox.text = .local(.moneybox) + "£\(String(viewModel?.selectedProduct?.moneybox ?? 0.0))"
         
         btnAddMoney.setTitle(.local(.addMoney), for: .normal)
+        btnAddMoney.accessibilityIdentifier = "btnAddMoney"
         
         btnAddMoney.rx.tap.subscribe { [weak self] _ in
             self?.viewModel?.setOneOffPayment()

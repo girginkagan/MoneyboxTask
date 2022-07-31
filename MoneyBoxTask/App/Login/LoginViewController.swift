@@ -30,6 +30,7 @@ final class LoginViewController: UIViewController, Storyboarded {
         tfMail.placeholder = .local(.email)
         tfPassword.placeholder = .local(.password)
         btnLogin.setTitle(.local(.login), for: .normal)
+        btnLogin.accessibilityIdentifier = "btnLogin"
         
         tfMail.setLeftPaddingPoints(20)
         tfPassword.setLeftPaddingPoints(20)

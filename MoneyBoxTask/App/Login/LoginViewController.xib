@@ -30,7 +30,7 @@
                 <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oKj-qg-ljC">
                     <rect key="frame" x="20" y="358" width="374" height="190"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test+ios2@moneyboxapp.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2S-wB-GUN">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2S-wB-GUN">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                             <color key="backgroundColor" name="color_textfield_bg"/>
                             <constraints>
@@ -45,7 +45,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="P455word12" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uyD-hN-Ueh">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uyD-hN-Ueh">
                             <rect key="frame" x="0.0" y="60" width="374" height="50"/>
                             <color key="backgroundColor" name="color_textfield_bg"/>
                             <constraints>

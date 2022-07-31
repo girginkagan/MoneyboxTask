@@ -34,6 +34,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AppDelegate.container.registerDependencies()
         
+        if CommandLine.arguments.contains("loggedout_uitesting") {
+            DataProvider.shared.removeUser()
+        }
+        
         appCoordinator = AppDelegate.container.resolve(AppCoordinator.self)!
         appCoordinator.start()
         
