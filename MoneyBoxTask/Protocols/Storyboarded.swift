@@ -26,6 +26,9 @@ extension Storyboarded {
         case AppStoryboard.profile.rawValue:
             let viewController = ProfileViewController(nibName: identifier, bundle: nil) as! Self
             return viewController
+        case AppStoryboard.product.rawValue:
+            let viewController = ProductViewController(nibName: identifier, bundle: nil) as! Self
+            return viewController
         default:
             let viewController = SplashViewController(nibName: identifier, bundle: nil) as! Self
             return viewController

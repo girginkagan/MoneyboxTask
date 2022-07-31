@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,12 +23,12 @@
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3D0-HS-jx9">
                     <rect key="frame" x="20" y="79" width="374" height="42"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                     <color key="textColor" name="AccentColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKF-NM-DCG">
-                    <rect key="frame" x="20" y="173" width="374" height="50"/>
+                    <rect key="frame" x="20" y="151" width="374" height="50"/>
                     <color key="backgroundColor" name="color_primary"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="TZ3-2g-6Ss"/>
@@ -47,13 +46,13 @@
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" name="color_bg"/>
             <constraints>
                 <constraint firstItem="3D0-HS-jx9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="9zx-99-kEz"/>
+                <constraint firstItem="XKF-NM-DCG" firstAttribute="top" secondItem="3D0-HS-jx9" secondAttribute="bottom" constant="30" id="DvD-Dc-g7z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3D0-HS-jx9" secondAttribute="trailing" constant="20" id="OYc-Db-AEZ"/>
                 <constraint firstItem="XKF-NM-DCG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="YDJ-bW-CDq"/>
                 <constraint firstItem="3D0-HS-jx9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="mEi-kB-d8g"/>
-                <constraint firstItem="XKF-NM-DCG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="129" id="s3K-2G-KYr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XKF-NM-DCG" secondAttribute="trailing" constant="20" id="svl-mE-Bvp"/>
             </constraints>
             <point key="canvasLocation" x="139" y="100"/>
@@ -63,14 +62,14 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="color_bg">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="color_primary">
             <color red="0.0" green="0.76078431372549016" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_white">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

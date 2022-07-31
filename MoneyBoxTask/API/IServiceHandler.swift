@@ -9,4 +9,5 @@ import Alamofire
 
 protocol IServiceHandler {
     func postLogin(email: String, password: String, successCompletion: @escaping(LoginResponseModel) -> Void, errorCompletion: @escaping(BaseErrorModel) -> Void)
+    func getProducts(successCompletion: @escaping(ProductsResponseModel) -> Void, errorCompletion: @escaping(BaseErrorModel) -> Void)
 }

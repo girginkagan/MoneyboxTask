@@ -63,9 +63,9 @@ extension BaseRequest {
         default:
             request.httpMethod = "GET"
         }
-        /*if (DataProvider.shared.getSelectedUser()?.token ?? "").isEmpty == false {
-            request.setValue("Bearer \(DataProvider.shared.getSelectedUser()?.token ?? "")", forHTTPHeaderField: "Authorization")
-        }*/
+        if (DataProvider.shared.user.value?.session?.bearerToken ?? "").isEmpty == false {
+            request.setValue("Bearer \(DataProvider.shared.user.value?.session?.bearerToken ?? "")", forHTTPHeaderField: "Authorization")
+        }
         
         return request
     }

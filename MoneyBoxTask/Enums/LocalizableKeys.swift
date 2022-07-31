@@ -19,4 +19,9 @@ enum LocalizationKeys: String {
     case errorPassword
     case errorMail
     case logout
+    case products
+    case welcome
+    case totalPlanValue
+    case planValue
+    case moneybox
 }

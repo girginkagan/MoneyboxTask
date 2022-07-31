@@ -21,8 +21,19 @@ final class HomeCoordinator: BaseCoordinator {
         viewModel.coordinator = self
         viewController.viewModel = viewModel
         
-        navigationController.setNavigationBarHidden(true, animated: false)
+        navigationController.navigationBar.tintColor = Color.color_primary.color
+        navigationController.navigationBar.backgroundColor = Color.color_bg.color
         
         navigationController.viewControllers = [viewController]
+    }
+    
+    func presentSplash() {
+        (UIApplication.shared.delegate as? AppDelegate)?.appCoordinator.presentSplash()
+    }
+    
+    func presentProduct(data: ProductResponse?) {
+        let coordinator = AppDelegate.container.resolve(ProductCoordinator.self)!
+        coordinator.setData(data: data)
+        startChild(coordinator: coordinator)
     }
 }

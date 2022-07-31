@@ -1,19 +1,18 @@
 //
-//  HomeViewController.swift
-//  MoneyboxTask
+//  ProductViewController.swift
+//  MoneyBoxTask
 //
-//  Created by Kagan Girgin on 7/29/22.
+//  Created by Kagan Girgin on 7/31/22.
 //
 
 import UIKit
 import RxSwift
 
-final class HomeViewController: UIViewController, Storyboarded {
-    static var storyboard = AppStoryboard.home
-    var viewModel: HomeViewModel?
+final class ProductViewController: UIViewController, Storyboarded {
+    static var storyboard = AppStoryboard.product
+    var viewModel: ProductViewModel?
     private let disposeBag = DisposeBag()
     
-    @IBOutlet weak private var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +22,7 @@ final class HomeViewController: UIViewController, Storyboarded {
     }
     
     private func setUI() {
-        navigationItem.titleView = UIImageView(image: Icon.ic_titleview.image)
         
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
     }
     
     private func setBindings() {
@@ -50,26 +47,5 @@ final class HomeViewController: UIViewController, Storyboarded {
         }).disposed(by: disposeBag)
 
         viewModel.setBindings()
-        viewModel.getData()
-        
-        setTableView()
-    }
-}
-
-extension HomeViewController {
-    private func setTableView() {
-        guard let viewModel = viewModel else { return }
-        
-        tableView.register(cell: TitleTableViewCell.self)
-        tableView.register(cell: ProductTableViewCell.self)
-        
-        viewModel.tableViewDelegate.subscribe { [weak self] _ in
-            if let delegate = viewModel.tableViewDelegate.value {
-                guard let self = self else { return }
-                self.tableView.rx.setDelegate(delegate).disposed(by: self.disposeBag)
-            }
-        }.disposed(by: disposeBag)
-        
-        viewModel.items.bind(to: tableView.rx.items(dataSource: viewModel.dataSource)).disposed(by: disposeBag)
     }
 }

@@ -15,5 +15,6 @@ extension Container {
         autoregister(LoginViewModel.self, initializer: LoginViewModel.init)
         autoregister(TabBarViewModel.self, initializer: TabBarViewModel.init)
         autoregister(ProfileViewModel.self, initializer: ProfileViewModel.init)
+        autoregister(ProductViewModel.self, initializer: ProductViewModel.init)
     }
 }

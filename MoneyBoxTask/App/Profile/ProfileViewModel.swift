@@ -18,7 +18,7 @@ final class ProfileViewModel: BaseViewModel {
     }
     
     func logout() {
-        DataProvider.shared.removeUser()
+        removeUser()
         
         coordinator?.presentSplash()
     }

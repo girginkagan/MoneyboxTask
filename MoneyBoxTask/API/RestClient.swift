@@ -8,7 +8,6 @@
 import Alamofire
 
 public class RestClient: IServiceHandler {
-    
     static let sharedInstance = RestClient()
     
     private func sendRequest<T: Codable>(_ request: BaseRequest, _ type: T.Type, successCompletion: @escaping(T) -> Void, errorCompletion:  @escaping(BaseErrorModel) -> Void) {
@@ -31,5 +30,10 @@ public class RestClient: IServiceHandler {
     func postLogin(email: String, password: String, successCompletion: @escaping (LoginResponseModel) -> Void, errorCompletion: @escaping (BaseErrorModel) -> Void) {
         let request = PostLoginApiRequest(email: email, password: password)
         sendRequest(request, LoginResponseModel.self, successCompletion: successCompletion, errorCompletion: errorCompletion)
+    }
+    
+    func getProducts(successCompletion: @escaping (ProductsResponseModel) -> Void, errorCompletion: @escaping (BaseErrorModel) -> Void) {
+        let request = GetProductsApiRequest()
+        sendRequest(request, ProductsResponseModel.self, successCompletion: successCompletion, errorCompletion: errorCompletion)
     }
 }

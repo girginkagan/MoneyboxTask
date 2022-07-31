@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		776BF6DB28963B7000C3E4DC /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 776BF6DA28963B7000C3E4DC /* Differentiator */; };
+		776BF6DD28963B7000C3E4DC /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 776BF6DC28963B7000C3E4DC /* RxDataSources */; };
+		776BF6E0289641D300C3E4DC /* ProductsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6DF289641D300C3E4DC /* ProductsResponseModel.swift */; };
+		776BF6E42896451400C3E4DC /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6E22896451400C3E4DC /* TitleTableViewCell.swift */; };
+		776BF6E52896451400C3E4DC /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776BF6E32896451400C3E4DC /* TitleTableViewCell.xib */; };
+		776BF6E728964B5100C3E4DC /* UITableView+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6E628964B5100C3E4DC /* UITableView+register.swift */; };
+		776BF6E928964B6D00C3E4DC /* UITableViewCell+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6E828964B6D00C3E4DC /* UITableViewCell+identifier.swift */; };
+		776BF6EB28964D0200C3E4DC /* GetProductsApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6EA28964D0200C3E4DC /* GetProductsApiRequest.swift */; };
+		776BF6EE2896572800C3E4DC /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6EC2896572800C3E4DC /* ProductTableViewCell.swift */; };
+		776BF6EF2896572800C3E4DC /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776BF6ED2896572800C3E4DC /* ProductTableViewCell.xib */; };
+		776BF6F328965C3800C3E4DC /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6F128965C3800C3E4DC /* ProductViewController.swift */; };
+		776BF6F428965C3800C3E4DC /* ProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776BF6F228965C3800C3E4DC /* ProductViewController.xib */; };
+		776BF6F628965C4500C3E4DC /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6F528965C4500C3E4DC /* ProductViewModel.swift */; };
+		776BF6F828965C5000C3E4DC /* ProductCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776BF6F728965C5000C3E4DC /* ProductCoordinator.swift */; };
 		77FAFC3D28944F4D00635BE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFC3C28944F4D00635BE8 /* AppDelegate.swift */; };
 		77FAFC4628944F4E00635BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FAFC4528944F4E00635BE8 /* Assets.xcassets */; };
 		77FAFC4928944F4E00635BE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77FAFC4728944F4E00635BE8 /* LaunchScreen.storyboard */; };
@@ -96,6 +110,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		776BF6DF289641D300C3E4DC /* ProductsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResponseModel.swift; sourceTree = "<group>"; };
+		776BF6E22896451400C3E4DC /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		776BF6E32896451400C3E4DC /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		776BF6E628964B5100C3E4DC /* UITableView+register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+register.swift"; sourceTree = "<group>"; };
+		776BF6E828964B6D00C3E4DC /* UITableViewCell+identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+identifier.swift"; sourceTree = "<group>"; };
+		776BF6EA28964D0200C3E4DC /* GetProductsApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsApiRequest.swift; sourceTree = "<group>"; };
+		776BF6EC2896572800C3E4DC /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		776BF6ED2896572800C3E4DC /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		776BF6F128965C3800C3E4DC /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		776BF6F228965C3800C3E4DC /* ProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductViewController.xib; sourceTree = "<group>"; };
+		776BF6F528965C4500C3E4DC /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		776BF6F728965C5000C3E4DC /* ProductCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCoordinator.swift; sourceTree = "<group>"; };
 		77FAFC3928944F4D00635BE8 /* MoneyBoxTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyBoxTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77FAFC3C28944F4D00635BE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77FAFC4528944F4E00635BE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,9 +192,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				77FAFD6C28945C2900635BE8 /* UnrealmObjC in Frameworks */,
+				776BF6DD28963B7000C3E4DC /* RxDataSources in Frameworks */,
 				77FAFD832894624600635BE8 /* RxBlocking in Frameworks */,
 				77FAFD852894624600635BE8 /* RxCocoa in Frameworks */,
 				77FAFD6F28945D4D00635BE8 /* IQKeyboardManagerSwift in Frameworks */,
+				776BF6DB28963B7000C3E4DC /* Differentiator in Frameworks */,
 				77FAFD8C289462AB00635BE8 /* Swinject in Frameworks */,
 				77FAFD892894624600635BE8 /* RxSwift in Frameworks */,
 				77FAFD4D2894592000635BE8 /* SVProgressHUD in Frameworks */,
@@ -196,6 +224,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		776BF6DE28963FE600C3E4DC /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				776BF6E1289644F800C3E4DC /* Home */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		776BF6E1289644F800C3E4DC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				776BF6E22896451400C3E4DC /* TitleTableViewCell.swift */,
+				776BF6E32896451400C3E4DC /* TitleTableViewCell.xib */,
+				776BF6EC2896572800C3E4DC /* ProductTableViewCell.swift */,
+				776BF6ED2896572800C3E4DC /* ProductTableViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		776BF6F028965C1E00C3E4DC /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				776BF6F128965C3800C3E4DC /* ProductViewController.swift */,
+				776BF6F528965C4500C3E4DC /* ProductViewModel.swift */,
+				776BF6F728965C5000C3E4DC /* ProductCoordinator.swift */,
+				776BF6F228965C3800C3E4DC /* ProductViewController.xib */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
 		77FAFC3028944F4D00635BE8 = {
 			isa = PBXGroup;
 			children = (
@@ -255,12 +313,14 @@
 			isa = PBXGroup;
 			children = (
 				77FAFCB22894557D00635BE8 /* AppCoordinator.swift */,
+				776BF6DE28963FE600C3E4DC /* TableViewCells */,
 				77FAFCB42894558400635BE8 /* Base */,
 				77FAFCB52894558800635BE8 /* Splash */,
 				77FAFCB62894558E00635BE8 /* Login */,
 				77FAFCB72894559700635BE8 /* TabBar */,
 				77FAFCB8289455A100635BE8 /* Home */,
 				77FAFCB9289455AC00635BE8 /* Profile */,
+				776BF6F028965C1E00C3E4DC /* Product */,
 				77FAFC4728944F4E00635BE8 /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -381,6 +441,8 @@
 				77FAFD022894574C00635BE8 /* String+local.swift */,
 				77FAFD032894574C00635BE8 /* UIViewController+Extensions.swift */,
 				77FAFD90289593DF00635BE8 /* UITextField+Padding.swift */,
+				776BF6E628964B5100C3E4DC /* UITableView+register.swift */,
+				776BF6E828964B6D00C3E4DC /* UITableViewCell+identifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -418,6 +480,7 @@
 			children = (
 				77FAFD1E289457D900635BE8 /* BaseRequest.swift */,
 				77FAFD9C28959C3D00635BE8 /* PostLoginApiLoginRequest.swift */,
+				776BF6EA28964D0200C3E4DC /* GetProductsApiRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -444,6 +507,7 @@
 			children = (
 				77FAFD1C289457C900635BE8 /* LoginResponseModel.swift */,
 				77FAFDA02895A6DE00635BE8 /* BaseResponseModel.swift */,
+				776BF6DF289641D300C3E4DC /* ProductsResponseModel.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -476,6 +540,8 @@
 				77FAFD882894624600635BE8 /* RxSwift */,
 				77FAFD8B289462AB00635BE8 /* Swinject */,
 				77FAFD8E289462DA00635BE8 /* SwinjectAutoregistration */,
+				776BF6DA28963B7000C3E4DC /* Differentiator */,
+				776BF6DC28963B7000C3E4DC /* RxDataSources */,
 			);
 			productName = MoneyBoxTask;
 			productReference = 77FAFC3928944F4D00635BE8 /* MoneyBoxTask.app */;
@@ -557,6 +623,7 @@
 				77FAFD812894624600635BE8 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				77FAFD8A289462AA00635BE8 /* XCRemoteSwiftPackageReference "Swinject" */,
 				77FAFD8D289462DA00635BE8 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+				776BF6D928963B7000C3E4DC /* XCRemoteSwiftPackageReference "RxDataSources" */,
 			);
 			productRefGroup = 77FAFC3A28944F4D00635BE8 /* Products */;
 			projectDirPath = "";
@@ -578,8 +645,11 @@
 				77FAFCCD2894563E00635BE8 /* LoginViewController.xib in Resources */,
 				77FAFC4928944F4E00635BE8 /* LaunchScreen.storyboard in Resources */,
 				77FAFCF52894571300635BE8 /* Localizable.strings in Resources */,
+				776BF6F428965C3800C3E4DC /* ProductViewController.xib in Resources */,
+				776BF6E52896451400C3E4DC /* TitleTableViewCell.xib in Resources */,
 				77FAFCDB2894565700635BE8 /* HomeViewController.xib in Resources */,
 				77FAFCC4289455FB00635BE8 /* SplashViewController.xib in Resources */,
+				776BF6EF2896572800C3E4DC /* ProductTableViewCell.xib in Resources */,
 				77FAFC4628944F4E00635BE8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,16 +675,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776BF6E42896451400C3E4DC /* TitleTableViewCell.swift in Sources */,
 				77FAFD17289457A200635BE8 /* IServiceHandler.swift in Sources */,
 				77FAFCB32894557D00635BE8 /* AppCoordinator.swift in Sources */,
+				776BF6F328965C3800C3E4DC /* ProductViewController.swift in Sources */,
 				77FAFCC7289455FB00635BE8 /* SplashCoordinator.swift in Sources */,
 				77FAFCD92894565700635BE8 /* HomeCoordinator.swift in Sources */,
+				776BF6E0289641D300C3E4DC /* ProductsResponseModel.swift in Sources */,
 				77FAFD052894574C00635BE8 /* UIViewController+Extensions.swift in Sources */,
 				77FAFD0C2894575F00635BE8 /* Color.swift in Sources */,
+				776BF6E928964B6D00C3E4DC /* UITableViewCell+identifier.swift in Sources */,
 				77FAFD0E2894575F00635BE8 /* AppStoryboard.swift in Sources */,
 				77FAFD16289457A200635BE8 /* RestClient.swift in Sources */,
 				77FAFDA52895B5EC00635BE8 /* PasswordViewModel.swift in Sources */,
 				77FAFD102894575F00635BE8 /* APIStatusCodes.swift in Sources */,
+				776BF6F628965C4500C3E4DC /* ProductViewModel.swift in Sources */,
 				77FAFCEA2894569600635BE8 /* Container+API.swift in Sources */,
 				77FAFCBF289455D900635BE8 /* BaseViewModel.swift in Sources */,
 				77FAFCEC2894569600635BE8 /* Container+RegisterDependencies.swift in Sources */,
@@ -629,6 +704,7 @@
 				77FAFD9B28959BE900635BE8 /* LoginRequestModel.swift in Sources */,
 				77FAFCFF2894573C00635BE8 /* APIErrorGenerator.swift in Sources */,
 				77FAFD9D28959C3D00635BE8 /* PostLoginApiLoginRequest.swift in Sources */,
+				776BF6F828965C5000C3E4DC /* ProductCoordinator.swift in Sources */,
 				77FAFCC5289455FB00635BE8 /* SplashViewModel.swift in Sources */,
 				77FAFD0D2894575F00635BE8 /* APIErrors.swift in Sources */,
 				77FAFD132894577300635BE8 /* Storyboarded.swift in Sources */,
@@ -642,11 +718,14 @@
 				77FAFD0F2894575F00635BE8 /* Icon.swift in Sources */,
 				77FAFD112894575F00635BE8 /* LocalizableKeys.swift in Sources */,
 				77FAFCDA2894565700635BE8 /* HomeViewController.swift in Sources */,
+				776BF6EB28964D0200C3E4DC /* GetProductsApiRequest.swift in Sources */,
 				77FAFD042894574C00635BE8 /* String+local.swift in Sources */,
 				77FAFCC6289455FB00635BE8 /* SplashViewController.swift in Sources */,
+				776BF6E728964B5100C3E4DC /* UITableView+register.swift in Sources */,
 				77FAFCE12894566400635BE8 /* ProfileViewModel.swift in Sources */,
 				77FAFCF72894572800635BE8 /* DataProvider.swift in Sources */,
 				77FAFCCE2894563E00635BE8 /* LoginViewModel.swift in Sources */,
+				776BF6EE2896572800C3E4DC /* ProductTableViewCell.swift in Sources */,
 				77FAFCEB2894569600635BE8 /* Container+Coordinators.swift in Sources */,
 				77FAFC3D28944F4D00635BE8 /* AppDelegate.swift in Sources */,
 				77FAFD1F289457D900635BE8 /* BaseRequest.swift in Sources */,
@@ -1250,6 +1329,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		776BF6D928963B7000C3E4DC /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		77FAFD4B2894592000635BE8 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/epitonium/SVProgressHUD.git";
@@ -1309,6 +1396,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		776BF6DA28963B7000C3E4DC /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776BF6D928963B7000C3E4DC /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		776BF6DC28963B7000C3E4DC /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776BF6D928963B7000C3E4DC /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
 		77FAFD4C2894592000635BE8 /* SVProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 77FAFD4B2894592000635BE8 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
